@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        localStorage.setItem('lastPlayer', 'x');
+        localStorage.setItem('player', 'x');
+    </script>
+</head>
+
+<body>
+    <div class="scoorTable">
+        <div class="player one">
+            blue player: <span id="blue" class="three"> 0</span>
+        </div>
+        <div class="player tow">
+            green player: <span id="green" class="three"> 0</span>
+        </div>
+    </div>
+    <div class="playerTime" id="playerTime"></div>
+    <div class="newContoner">
+        <div class="litlBox">
+            <div class="miniBox" onclick="iw(this)" id="b1a"></div>
+            <div class="line" onclick="cb(this)" id="1a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b2a"></div>
+            <div class="line" onclick="cb(this)" id="2a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b3a"></div>
+            <div class="line" onclick="cb(this)" id="3a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b4a"></div>
+            <div class="line" onclick="cb(this)" id="4a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b5a"></div>
+            <div class="line" onclick="cb(this)" id="5a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b6a"></div>
+            <div class="line" onclick="cb(this)" id="6a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b7a"></div>
+            <div class="line" onclick="cb(this)" id="7a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b8a"></div>
+            <div class="line" onclick="cb(this)" id="8a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b9a"></div>
+            <div class="line" onclick="cb(this)" id="9a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b10a"></div>
+            <div class="line" onclick="cb(this)" id="10a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b11a"></div>
+            <div class="line" onclick="cb(this)" id="11a"></div>
+            <div class="miniBox" onclick="iw(this)" id="b12a"></div>
+        </div>
+
+        <div class="bigLine">
+            <div class="yLine" onclick="cb(this)" id="1A"></div>
+            <div class="yLine" onclick="cb(this)" id="2A"></div>
+            <div class="yLine" onclick="cb(this)" id="3A"></div>
+            <div class="yLine" onclick="cb(this)" id="4A"></div>
+            <div class="yLine" onclick="cb(this)" id="5A"></div>
+            <div class="yLine" onclick="cb(this)" id="6A"></div>
+            <div class="yLine" onclick="cb(this)" id="7A"></div>
+            <div class="yLine" onclick="cb(this)" id="8A"></div>
+            <div class="yLine" onclick="cb(this)" id="9A"></div>
+            <div class="yLine" onclick="cb(this)" id="10A"></div>
+            <div class="yLine" onclick="cb(this)" id="11A"></div>
+            <div class="yLine" onclick="cb(this)" id="12A"></div>
+        </div>
+        <div class="litlBox">
+            <div class="miniBox" onclick="iw(this)" id="b1b"></div>
+            <div class="line" onclick="cb(this)" id="1b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b2b"></div>
+            <div class="line" onclick="cb(this)" id="2b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b3b"></div>
+            <div class="line" onclick="cb(this)" id="3b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b4b"></div>
+            <div class="line" onclick="cb(this)" id="4b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b5b"></div>
+            <div class="line" onclick="cb(this)" id="5b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b6b"></div>
+            <div class="line" onclick="cb(this)" id="6b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b7b"></div>
+            <div class="line" onclick="cb(this)" id="7b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b8b"></div>
+            <div class="line" onclick="cb(this)" id="8b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b9b"></div>
+            <div class="line" onclick="cb(this)" id="9b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b10b"></div>
+            <div class="line" onclick="cb(this)" id="10b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b11b"></div>
+            <div class="line" onclick="cb(this)" id="11b"></div>
+            <div class="miniBox" onclick="iw(this)" id="b12b"></div>
+        </div>
+
+        <div class="bigLine">
+            <div class="yLine" onclick="cb(this)" id="1B"></div>
+            <div class="yLine" onclick="cb(this)" id="2B"></div>
+            <div class="yLine" onclick="cb(this)" id="3B"></div>
+            <div class="yLine" onclick="cb(this)" id="4B"></div>
+            <div class="yLine" onclick="cb(this)" id="5B"></div>
+            <div class="yLine" onclick="cb(this)" id="6B"></div>
+            <div class="yLine" onclick="cb(this)" id="7B"></div>
+            <div class="yLine" onclick="cb(this)" id="8B"></div>
+            <div class="yLine" onclick="cb(this)" id="9B"></div>
+            <div class="yLine" onclick="cb(this)" id="10B"></div>
+            <div class="yLine" onclick="cb(this)" id="11B"></div>
+            <div class="yLine" onclick="cb(this)" id="12B"></div>
+        </div>
+        <div class="litlBox">
+            <div class="miniBox" onclick="iw(this)" id="b1c"></div>
+            <div class="line" onclick="cb(this)" id="1c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b2c"></div>
+            <div class="line" onclick="cb(this)" id="2c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b3c"></div>
+            <div class="line" onclick="cb(this)" id="3c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b4c"></div>
+            <div class="line" onclick="cb(this)" id="4c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b5c"></div>
+            <div class="line" onclick="cb(this)" id="5c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b6c"></div>
+            <div class="line" onclick="cb(this)" id="6c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b7c"></div>
+            <div class="line" onclick="cb(this)" id="7c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b8c"></div>
+            <div class="line" onclick="cb(this)" id="8c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b9c"></div>
+            <div class="line" onclick="cb(this)" id="9c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b10c"></div>
+            <div class="line" onclick="cb(this)" id="10c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b11c"></div>
+            <div class="line" onclick="cb(this)" id="11c"></div>
+            <div class="miniBox" onclick="iw(this)" id="b12c"></div>
+        </div>
+
+        <div class="bigLine">
+            <div class="yLine" onclick="cb(this)" id="1C"></div>
+            <div class="yLine" onclick="cb(this)" id="2C"></div>
+            <div class="yLine" onclick="cb(this)" id="3C"></div>
+            <div class="yLine" onclick="cb(this)" id="4C"></div>
+            <div class="yLine" onclick="cb(this)" id="5C"></div>
+            <div class="yLine" onclick="cb(this)" id="6C"></div>
+            <div class="yLine" onclick="cb(this)" id="7C"></div>
+            <div class="yLine" onclick="cb(this)" id="8C"></div>
+            <div class="yLine" onclick="cb(this)" id="9C"></div>
+            <div class="yLine" onclick="cb(this)" id="10C"></div>
+            <div class="yLine" onclick="cb(this)" id="11C"></div>
+            <div class="yLine" onclick="cb(this)" id="12C"></div>
+        </div>
+        <div class="litlBox">
+            <div class="miniBox" onclick="iw(this)" id="b1d"></div>
+            <div class="line" onclick="cb(this)" id="1d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b2d"></div>
+            <div class="line" onclick="cb(this)" id="2d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b3d"></div>
+            <div class="line" onclick="cb(this)" id="3d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b4d"></div>
+            <div class="line" onclick="cb(this)" id="4d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b5d"></div>
+            <div class="line" onclick="cb(this)" id="5d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b6d"></div>
+            <div class="line" onclick="cb(this)" id="6d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b7d"></div>
+            <div class="line" onclick="cb(this)" id="7d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b8d"></div>
+            <div class="line" onclick="cb(this)" id="8d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b9d"></div>
+            <div class="line" onclick="cb(this)" id="9d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b10d"></div>
+            <div class="line" onclick="cb(this)" id="10d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b11d"></div>
+            <div class="line" onclick="cb(this)" id="11d"></div>
+            <div class="miniBox" onclick="iw(this)" id="b12d"></div>
+        </div>
+    </div>
+    <div class="toor">
+        <span id="time">00:00</span>
+    </div>
+    <script>
+        function $(id) {
+            return document.getElementById(id);
+        }
+        var myVArTime = [1000]
+        var time = 0;
+        setInterval(() => {
+            time = time + 1;
+            if (time < 10) {
+                $('time').innerHTML = `00:0${time}`;
+            } else {
+                $('time').innerHTML = `00:${time}`;
+            }
+            if (time == 45) {
+                time = 0;
+                if (localStorage.getItem('player') == 'x') {
+                    localStorage.setItem('player', 'y');
+                    localStorage.setItem('lastPlayer', 'y');
+                    $('playerTime').style.background = "rgb(32, 136, 0)"
+                } else {
+                    localStorage.setItem('player', 'x');
+                    localStorage.setItem('lastPlayer', 'x');
+                    $('playerTime').style.background = "rgb(0, 140, 255)"
+                }
+            }
+        }, myVArTime[0]);
+
+        function cb(e) {
+            var id = e.getAttribute('id');
+            if (e.getAttribute('name') != 'notEmpty') {
+                if (localStorage.getItem('player') == 'x') {
+                    e.style.background = "blue";
+                    localStorage.setItem('player', 'y');
+                    localStorage.setItem('lastPlayer', 'x');
+                    e.setAttribute('name', 'notEmpty')
+                    $('playerTime').style.background = "rgb(32, 136, 0)"
+                    time = 0;
+                } else {
+                    e.style.background = "green";
+                    localStorage.setItem('player', 'x');
+                    localStorage.setItem('lastPlayer', 'y');
+                    e.setAttribute('name', 'notEmpty')
+                    $('playerTime').style.background = "rgb(0, 140, 255)"
+                    time = 0;
+                }
+            }
+            box.forEach(e => {
+                if (e.pos[1] == id) {
+                    e.pos[1] = 1;
+                }
+                if (e.pos[2] == id) {
+                    e.pos[2] = 1;
+                }
+                if (e.pos[3] == id) {
+                    e.pos[3] = 1;
+                }
+                if (e.pos[4] == id) {
+                    e.pos[4] = 1;
+                }
+            });
+        }
+        var box = [{
+            pos: ['b1a', 1, '1a', '1A', 1]
+        }, {
+            pos: ['b2a', 1, '2a', '2A', '1a']
+        }, {
+            pos: ['b3a', 1, '3a', '3A', '2a']
+        }, {
+            pos: ['b4a', 1, '4a', '4A', '3a']
+        }, {
+            pos: ['b5a', 1, '5a', '5A', '4a']
+        }, {
+            pos: ['b6a', 1, '6a', '6A', '5a']
+        }, {
+            pos: ['b7a', 1, '7a', '7A', '6a']
+        }, {
+            pos: ['b8a', 1, '8a', '8A', '7a']
+        }, {
+            pos: ['b9a', 1, '9a', '9A', '8a']
+        }, {
+            pos: ['b10a', 1, '10a', '10A', '9a']
+        }, {
+            pos: ['b11a', 1, '11a', '11A', '10a']
+        }, {
+            pos: ['b12a', 1, 1, '12A', '11a']
+        }, {
+            pos: ['b1b', '1A', '1b', '1B', 1]
+        }, {
+            pos: ['b2b', '2A', '2b', '2B', '1b']
+        }, {
+            pos: ['b3b', '3A', '3b', '3B', '2b']
+        }, {
+            pos: ['b4b', '4A', '4b', '4B', '3b']
+        }, {
+            pos: ['b5b', '5A', '5b', '5B', '4b']
+        }, {
+            pos: ['b6b', '6A', '6b', '6B', '5b']
+        }, {
+            pos: ['b7b', '7A', '7b', '7B', '6b']
+        }, {
+            pos: ['b8b', '8A', '8b', '8B', '7b']
+        }, {
+            pos: ['b9b', '9A', '9b', '9B', '8b']
+        }, {
+            pos: ['b10b', '10A', '10b', '10B', '9b']
+        }, {
+            pos: ['b11b', '11A', '11b', '11B', '10b']
+        }, {
+            pos: ['b12b', '12A', 1, '12B', '11b']
+        }, {
+            pos: ['b1c', '1B', '1c', '1C', 1]
+        }, {
+            pos: ['b2c', '2B', '2c', '2C', '1c']
+        }, {
+            pos: ['b3c', '3B', '3c', '3C', '2c']
+        }, {
+            pos: ['b4c', '4B', '4c', '4C', '3c']
+        }, {
+            pos: ['b5c', '5B', '5c', '5C', '4c']
+        }, {
+            pos: ['b6c', '6B', '6c', '6C', '5c']
+        }, {
+            pos: ['b7c', '7B', '7c', '7C', '6c']
+        }, {
+            pos: ['b8c', '8B', '8c', '8C', '7c']
+        }, {
+            pos: ['b9c', '9B', '9c', '9C', '8c']
+        }, {
+            pos: ['b10c', '10B', '10c', '10C', '9c']
+        }, {
+            pos: ['b11c', '11B', '11c', '11C', '10c']
+        }, {
+            pos: ['b12c', '12B', 1, '12C', '11c']
+        }, {
+            pos: ['b1d', '1C', '1d', 1, 1]
+        }, {
+            pos: ['b2d', '2C', '2d', 1, '1d']
+        }, {
+            pos: ['b3d', '3C', '3d', 1, '2d']
+        }, {
+            pos: ['b4d', '4C', '4d', 1, '3d']
+        }, {
+            pos: ['b5d', '5C', '5d', 1, '4d']
+        }, {
+            pos: ['b6d', '6C', '6d', 1, '5d']
+        }, {
+            pos: ['b7d', '7C', '7d', 1, '6d']
+        }, {
+            pos: ['b8d', '8C', '8d', 1, '7d']
+        }, {
+            pos: ['b9d', '9C', '9d', 1, '8d']
+        }, {
+            pos: ['b10d', '10C', '10d', 1, '9d']
+        }, {
+            pos: ['b11d', '11C', '11d', 1, '10d']
+        }, {
+            pos: ['b12d', '12C', 1, 1, '11d']
+        }]
+
+        function iw(e) {
+            var id = e.getAttribute('id');
+            if (e.getAttribute('name') != 'notEmpty') {
+                box.forEach(element => {
+                    if (element.pos[0] == id) {
+                        if (element.pos[1] == 1 && element.pos[2] == 1 && element.pos[3] == 1 && element.pos[4] == 1) {
+                            if (localStorage.getItem('lastPlayer') == 'x') {
+                                $('playerTime').style.background = "rgb(0, 140, 255)"
+                                e.style.background = 'rgba(0, 0, 255, 0.267)';
+                                localStorage.setItem('player', 'x');
+                                e.setAttribute('name', 'notEmpty')
+                                var scoor = $('blue').innerHTML
+                                scoor = parseInt(scoor) + 1;
+                                $('blue').innerHTML = `
+                                    ${scoor}
+                                        `
+                            } else {
+                                e.style.background = 'rgba(0, 128, 0, 0.24)';
+                                $('playerTime').style.background = "rgb(32, 136, 0)"
+                                localStorage.setItem('player', 'y');
+                                e.setAttribute('name', 'notEmpty')
+                                var scoor = $('green').innerHTML
+                                scoor = parseInt(scoor) + 1;
+                                $('green').innerHTML = `
+                                ${scoor}`
+                            }
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
